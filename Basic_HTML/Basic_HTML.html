@@ -1,0 +1,157 @@
+<!-- HEADLINES
+This element tells the browser about the structure of your website.
+h1 elements are often used for main headings,
+while h2 elements are generally used for subheadings.
+There are also h3, h4, h5 and h6 elements to indicate different levels of subheadings.
+-->
+<h1>Hello World</h1>
+<hr>
+
+<!-- PARA
+p elements are the preferred element for paragraph text on websites. p is short for "paragraph".
+-->
+<h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
+<hr>
+
+<!-- HTML5 INTRO
+HTML5 introduces more descriptive HTML tags. These include main, header, footer, nav, video, article, section and others.
+These tags give a descriptive structure to your HTML,
+make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility.
+The main HTML5 tag helps search engines and other developers find the main content of your page.
+-->
+<main>
+  <h1>Hello World</h1>
+  <p>Hello Paragraph</p>
+</main>
+<hr>
+
+<!-- ADDING IMAGES
+You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.
+Note that img elements are self-closing.
+All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to
+improve accessibility and is displayed if the image fails to load.
+-->
+<img src="https://www.your-image-source.com/your-image.jpg" alt="Author standing on a beach with two thumbs up.">
+<hr>
+
+<!-- ADD EXERNAL PAGES WITH ANCHOR TAG AND DEAD LINK
+a elements need a destination web address called an href attribute. They also need anchor text.
+Replace the href attribute value with a #, also known as a hash symbol, to create a dead link.
+-->
+<a href="http://freecatphotoapp.com" target="_blank">cat photos</a>
+<hr>
+
+<!-- INTERNAL SECTION USING ANCHOR TAG
+To create an internal link, you assign a link's href attribute to a hash symbol # plus the value of the id attribute for the
+element that you want to internally link to, usually further down the page.
+You then need to add the same id attribute to the element you are linking to. An id is an attribute that uniquely describes an element.
+-->
+<a href="#contacts-header">Contacts</a>
+...
+<h2 id="contacts-header">Contacts</h2>
+<hr>
+
+<!-- IMAGE AS A LINK
+You can make elements into links by nesting them within an a element.
+-->
+<a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>
+<hr>
+
+<!-- CREATE A LIST
+Unordered lists start with an opening <ul> element, followed by any number of <li> elements. Finally, unordered lists close with a </ul>
+Ordered lists start with an opening <ol> element, followed by any number of <li> elements. Finally, ordered lists are closed with the </ol> tag.
+-->
+<ul>
+  <li>milk</li>
+  <li>cheese</li>
+</ul>
+<ol>
+  <li>Garfield</li>
+  <li>Sylvester</li>
+</ol>
+<hr>
+
+<!-- TEXT FIELD AND PLACE HOLDER
+input elements are a convenient way to get input from your user. Note that input elements are self-closing.
+Placeholder text is what is displayed in your input element before your user has inputted anything.
+-->
+<input type="text">
+<input type="text" placeholder="this is placeholder text">
+<hr>
+
+<!-- FORM ELEMENT -->
+<form action="/url-where-you-want-to-submit-form-data"></form>
+
+<!-- SUBMIT BUTTON -->
+<button type="submit">this button submits the form</button>
+<hr>
+
+<!-- REQUIRED FIELD
+if you wanted to make a text input field required, you can just add the attribute required within your input element.
+-->
+<form action="/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+
+<!-- RADIO BUTTONS
+Radio buttons are a type of input.
+Each of your radio buttons can be nested within its own label element. By wrapping an input element inside of a
+label element it will automatically associate the radio button input with the label element surrounding it.
+All related radio buttons should have the same name attribute to create a radio button group.
+By creating a radio group, selecting any single radio button will automatically deselect the other buttons within
+the same group ensuring only one answer is provided by the user.
+-->
+<label for="indoor">
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+</label>
+<hr>
+<form action="/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+
+<!-- CHECKBOXES
+Checkboxes are a type of input.
+Each of your checkboxes can be nested within its own label element. By wrapping an input element inside of a
+label element it will automatically associate the checkbox input with the label element surrounding it.
+All related checkbox inputs should have the same name attribute.
+It is considered best practice to explicitly define the relationship between a checkbox input and its
+corresponding label by setting the for attribute on the label element to match the id attribute of the associated input element.
+-->
+<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+<hr>
+<form action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
