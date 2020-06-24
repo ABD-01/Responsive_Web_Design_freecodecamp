@@ -137,21 +137,67 @@ corresponding label by setting the for attribute on the label element to match t
 </form>
 <hr>
 
+<!-- VALUE ATTRIBUTE
+When a form gets submitted, the data is sent to the server and includes entries for the options selected.
+Inputs of type radio and checkbox report their values from the value attribute.
+-->
+<label for="indoor">
+  <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
+</label>
+<label for="outdoor">
+  <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+</label>
+<hr>
 
+<!-- DEFAULT CHECK IN RADIO BUTTON OR CHECKBOXES -->
+<input type="radio" name="test-name" checked>
+<hr>
+<form action="/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked > Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+</form>
+<hr>
 
+<!-- DOCTYPE
+You tell the browser this information by adding the <!DOCTYPE ...> tag on the first line,  where the ... part is the version of HTML.
+For HTML5, you use <!DOCTYPE html>.
+The '!' and uppercase 'DOCTYPE' is important, especially for older browsers. The 'html' is not case sensitive.
+Next, the rest of your HTML code needs to be wrapped in html tags. The opening <html> goes directly below the <!DOCTYPE html> line,
+and the closing </html> goes at the end of the page.
+-->
+<!DOCTYPE html>
+<html>
+  <h1>Here Goes the CODE</h1>
+</html>
+<hr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- HEAD AND BODY
+Any markup with information about your page would go into the head tag. Then any markup with the content of
+the page (what displays for a user) would go into the body tag.
+Metadata elements, such as link, meta, title, and style, typically go inside the head element.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The best page ever</title>
+  </head>
+  <body>
+    <h1>The best page ever</h1>
+    <p>
+      Cat ipsum dolor sit amet, jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed.
+      Go into a room to decide you didn't want to be in there anyway. I like big cats and i can not lie kitty ipsum dolor sit amet,
+      shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+      Meow i could pee on this if i had the energy for slap owner's face at 5am until human fills food dish yet scamper.
+      Knock dish off table head butt cant eat out of my own dish scratch the furniture. Make meme, make cute face.
+      Sleep in the bathroom sink chase laser but pee in the shoe. Paw at your fat belly licks your face and eat grass,
+      throw it back up kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot,
+      hairball run catnip eat the grass sniff.
+    </p>
+  </body>
+</html>
+<hr>
