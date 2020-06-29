@@ -1,5 +1,138 @@
-<!-- TEXT COLOR
+<p style="color: blue;"> TEXT COLOR
 Note that it is a good practice to end inline style declarations with a ; .
--->
-<h2 style="color: blue;">CatPhotoApp</h2>
+</p>
 <hr>
+
+<h6> Using CSS SELECTOR </h6>
+<style>
+  h6 {
+    color: red;
+  }
+</style>
+<hr>
+
+<p class = "red-text" > USING CSS CLASS
+Note that in your CSS style element, class names start with a period. In your HTML elements' class attribute, the class name does not include the period.
+</p>
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+<hr>
+
+<h4> FONT SIZE AND FONT FAMILY </h4>
+<style>
+h1 {
+  font-size: 30px;
+}
+h4 {
+  font-family: sans-serif;
+}
+</style>
+<hr>
+
+<p class="gfont"> Import a Google Font
+Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:
+font-family: FAMILY_NAME, GENERIC_NAME;.
+Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name.
+For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.
+</p>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .gfont {
+    font-family: Lobster;
+    font-family: monospace;
+  }
+</style>
+<hr>
+
+<p class="fd"> FONT DEGRADE
+When one font isn't available, you can tell the browser to "degrade" to another font.
+For example, if you wanted an element to use the Helvetica font, but degrade to the sans-serif font
+when Helvetica isn't available, you will specify it as follows:
+</p>
+<style>
+    .fd {
+      font-family: Helvetica, sans-serif;
+    }
+</style>
+<hr>
+
+<p> IMAGE SIZE </p>
+<style>
+    .smaller-image {
+    width:100px
+    }
+</style>
+<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back." class="smaller-image"></a>
+<hr>
+
+<p> BORDER </p>
+<style>
+    .thick-green-border {
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+  }
+</style>
+<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+</a>
+<hr>
+
+<!-- ROUNDED CORNERED BORDER -->
+<style>
+     .thick-green-round-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px
+  }
+</style>
+<a href="#"><img class="smaller-image thick-green-round-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+<hr>
+
+<!-- CIRCULAR IMAGES
+Your image should have a border radius of 50%, making it perfectly circular.
+-->
+<style>
+     .thick-green-circular-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+<a href="#"><img class="smaller-image thick-green-circular-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+<hr>
+
+<!-- Background Color -->
+<style>
+    .silver-background {
+    background-color: silver;
+    }
+</style>
+<div class="silver-background">
+    <p>Things cats love:</p>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
