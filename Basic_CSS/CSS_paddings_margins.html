@@ -1,0 +1,88 @@
+<div class="box yellow-box">
+  <p class="box blue-box">PADDING AND MARGIN
+  An element's margin controls the amount of space between an element's border and surrounding elements.
+  </p>
+  <p class="box red-box">Negative Margin</p>
+</div>
+
+<style>
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+    .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: -15px;
+  }
+</style>
+<hr>
+
+<div class="box yellow-box">
+  <p class="box blue-box2">VARIABLE PADDING AND MARGIN
+  <br>
+    CSS allows you to control the padding of all four individual sides of an element with the
+    padding-top, padding-right, padding-bottom, and padding-left properties.
+    <br>
+    CSS allows you to control the margin of all four individual sides of an element with the
+    margin-top, margin-right, margin-bottom, and margin-left properties.
+  </p>
+</div>
+<style>
+  .blue-box2 {
+    background-color: blue;
+    color: #fff;
+    padding-top:40px;
+    padding-left:40px;
+    padding-bottom:20px;
+    padding-right:20px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+</style>
+<hr>
+
+<div class="box yellow-box">
+    <p class="box blue-box3">CLOCKWISE NOTATION
+        <br>
+        Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually,
+        you can specify them all in one line, like this:
+        <br>
+        padding: 10px 20px 10px 20px;
+        <br>
+        These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+        <br>
+        Instead of specifying an element's margin-top, margin-right, margin-bottom, and margin-left properties individually,
+        you can specify them all in one line, like this:
+        <br>
+        margin: 10px 20px 10px 20px;
+        <br>
+        These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+    </p>
+</div>
+<style>
+    .blue-box3 {
+        background-color: blue;
+        color: #fff;
+        padding: 40px 20px 20px 40px;
+        margin: 40px 20px 20px 40px;
+    }
+</style>
+<hr>
