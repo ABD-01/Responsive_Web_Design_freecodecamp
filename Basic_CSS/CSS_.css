@@ -1,0 +1,19 @@
+/* ATTRS SELECTOR TO STYLE */
+[type='radio'] {
+     margin: 20px 0px 20px 0px;
+}
+
+/* Styling Body Element */
+body {
+  background-color: black;
+  color: green;
+  font-family: monospace;
+}
+
+/* Prioritize One Style Over AnotherPassed */
+.pink-text {
+    color: pink;
+}
+.blue-text {
+    color: blue;
+}
