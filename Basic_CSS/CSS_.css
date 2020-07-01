@@ -17,3 +17,61 @@ body {
 .blue-text {
     color: blue;
 }
+/* However, the order of the class declarations in the <style> section is what is important.
+The second declaration will always take precedence over the first.
+Because .blue-text is declared second, it overrides the attributes of .pink-text*/
+
+/* Override Class declaration by Id Attribute*/
+.pink-text {
+    color: pink;
+}
+.blue-text {
+    color: blue;
+}
+#orange-text {
+    color: orange;
+  }
+/* It doesn't matter whether you declare this CSS above or below pink-text class, since id attribute will always take precedence.*/
+
+/* Inline Styles */
+.pink-text {
+    color: pink;
+}
+.blue-text {
+    color: blue;
+}
+#orange-text {
+    color: orange;
+  }
+<h1 id="orange-text" class="pink-text blue-text" style="color:white;">
+/* The color will be white */
+
+/* Override all styles using !important */
+#orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
+/* The color will be pink */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
