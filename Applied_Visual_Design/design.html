@@ -1,10 +1,15 @@
 <style>
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+  }
   .p1 {
       text-align: justify;
   }
   .links {
     margin-right: 20px;
-
+    color: black;
+    opacity: 0.7;
   }
   .fullCard {
     border: 1px solid #ccc;
@@ -15,12 +20,14 @@
   .cardContent {
     padding: 10px;
   }
-
+  #thumbnail {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
 </style>
 <div class="fullCard">
   <div class="cardContent">
     <div class="cardText">
-      <h4 style="text-align: center;">Google<s>Alphabet</s></h4>
+      <h4>Google<s>Alphabet</s></h4>
       <p class-"p1"><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
       <p class-"p1">text-align: justify; causes all lines of text except the last line to meet the left and right edges of the line box.
       <br>
@@ -42,14 +49,33 @@
         The RGB values can range from 0 to 255. The alpha value can range from 1, which is fully opaque or a solid color, to 0,
         which is fully transparent or clear.
     </div>
-    <div>
-      The box-shadow property applies one or more shadows to an element.<br>The box-shadow property takes values for<br>
-      offset-x (how far to push the shadow horizontally from the element),<br>
-      offset-y (how far to push the shadow vertically from the element),<br>
-      blur-radius,<br>
-      spread-radius and<br>
-      color, in that order.<br>
+    <br>
+    <div class="fullcard" id="thumbnail">
+      The box-shadow property applies one or more shadows to an element.<br>The box-shadow property takes values for
+      <ul>
+        <li>offset-x (how far to push the shadow horizontally from the element),</li>
+        <li>offset-y (how far to push the shadow vertically from the element),</li>
+        <li>blur-radius,</li>
+        <li>spread-radius and</li>
+        <li>color, in that order.</li>
+      </ul>
       The blur-radius and spread-radius values are optional.
+    </div>
+    <br>
+    <div style="opacity: 0.7">
+      A value of 1 is opaque, which isn't transparent at all.<br>A value of 0.5 is half see-through.<br>A value of 0 is completely transparent.
+    </div>
+    <br>
+    <div>
+      text-transform :
+      <ul>
+        <li>lowercase :	"transform me"</li>
+        <li>uppercase	: "TRANSFORM ME"</li>
+        <li>capitalize :	"Transform Me"</li>
+        <li>initial :	Use the default value</li>
+        <li>inherit :	Use the text-transform value from the parent element</li>
+        <li>none :	Default: Use the original text</li>
+      </ul>
     </div>
     <div class="cardLinks">
       <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
