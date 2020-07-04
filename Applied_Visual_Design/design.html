@@ -15,12 +15,13 @@
   .cardContent {
     padding: 10px;
   }
+
 </style>
 <div class="fullCard">
   <div class="cardContent">
     <div class="cardText">
-      <h4 style="text-align: center;">Google</h4>
-      <p class-"p1">Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>
+      <h4 style="text-align: center;">Google<s>Alphabet</s></h4>
+      <p class-"p1"><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
       <p class-"p1">text-align: justify; causes all lines of text except the last line to meet the left and right edges of the line box.
       <br>
       text-align: center; centers the text
@@ -29,6 +30,26 @@
       <br>
       And text-align: left; (the default) left-aligns the text.
       </p>
+    </div>
+    <ul>
+        <li>With the strong tag, the browser applies the CSS of <code>font-weight: bold;</code> to the element.</li>
+        <li>With the u tag, the browser applies the CSS of <code>text-decoration: underline;</code> to the element.</li>
+        <li>With the em tag, the browser applies the CSS of <code>font-style: italic;</code> to the element.</li>
+        <li>With the s tag, the browser applies the CSS of <code>text-decoration: line-through;</code> to the element.</li>
+    </ul>
+    <div style=" background-color: rgba(45,45,45,0.1);">
+        rgba stands for:<br>r = red <br> g = green <br> b = blue <br> a = alpha/level of opacity <br>
+        The RGB values can range from 0 to 255. The alpha value can range from 1, which is fully opaque or a solid color, to 0,
+        which is fully transparent or clear.
+    </div>
+    <div>
+      The box-shadow property applies one or more shadows to an element.<br>The box-shadow property takes values for<br>
+      offset-x (how far to push the shadow horizontally from the element),<br>
+      offset-y (how far to push the shadow vertically from the element),<br>
+      blur-radius,<br>
+      spread-radius and<br>
+      color, in that order.<br>
+      The blur-radius and spread-radius values are optional.
     </div>
     <div class="cardLinks">
       <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
