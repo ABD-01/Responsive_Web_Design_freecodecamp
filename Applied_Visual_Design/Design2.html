@@ -1,0 +1,133 @@
+<style>
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+  .red {
+    background-color: #ff0000;
+  }
+  .green {
+    background-color: #00ff00;
+  }
+  .blue {
+    background-color: #0000ff;
+  }
+  .cyan {
+    background-color: #00FFFF;
+  }
+  .magenta {
+    background-color: #ff00ff;
+  }
+  .yellow {
+    background-color: #ffff00;
+  }
+  .orange{
+    background-color: #FF7F00;
+  }
+  .raspberry{
+    background-color: #FF007F;
+  }
+</style>
+<div class="red">Primary</div>
+<div class="green">Primary</div>
+<div class="blue">Primary</div>
+<div class="cyan">Secondary</div>
+<div class="magenta">Secondary</div>
+<div class="yellow">Secondary</div>
+<div class="orange">Tertiary</div>
+<div class="raspberry">Tertiary</div>
+<hr>
+
+<style>
+  .hsl_red {
+    background-color: hsl(0, 100%, 50%);
+  }
+  .hsl_yellow {
+    background-color: hsl(60, 100%, 50%);
+  }
+  .hsl_green {
+    background-color: hsl(120, 100%, 50%);
+  }
+  .hsl_cyan {
+    background-color: hsl(180, 100%, 50%);
+  }
+  .hsl_blue {
+    background-color: hsl(240, 100%, 50%);
+  }
+  .hsl_magenta {
+    background-color: hsl(300, 100%, 50%);
+  }
+</style>
+<div class="hsl_red">hsl(0, 100%, 50%)</div>
+<div class="hsl_yellow">hsl(60, 100%, 50%)</div>
+<div class="hsl_green">hsl(120, 100%, 50%)</div>
+<div class="hsl_cyan">hsl(180, 100%, 50%)</div>
+<div class="hsl_blue">hsl(240, 100%, 50%)</div>
+<div class="hsl_magenta">hsl(300, 100%, 50%)</div>
+<hr>
+
+<style>
+  .lg {
+    border-radius: 20px;
+    width: 150px;
+    height: 300px;
+    background: linear-gradient(35deg, red, yellow, green);
+  }
+  .rlg {
+    border-radius: 20px;
+    width: 150px;
+    height: 300px;
+    background: repeating-linear-gradient(45deg, yellow 0px, blue 40px, green 40px, red 80px );
+    font-weight: bold;
+    margin: 0 50px;
+    position:absolute;
+  }
+</style>
+<div class="lg"></div>
+<div class="rlg">0px [yellow -- blend -- blue] 40px [green -- blend -- red] 80px</div>
+<hr>
+
+<style>
+  .divtransform {
+    width: 70%;
+    height: 100px;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+  }
+  .divtransform:hover {
+    transform: scale(1.1);
+  }
+</style>
+<div class="divtransform"></div>
+<hr>
+
+<style>
+  #skew {
+    background-color: blue;
+    transform: skewX(-32deg);
+    margin: 0 50px;
+  }
+</style>
+<div id="skew"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
