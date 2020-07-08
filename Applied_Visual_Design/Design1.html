@@ -28,6 +28,23 @@
     color: red;
     background-color: rgba(255,0,0,0.2);
   }
+  .first {
+    width: 20%;
+    height: 20%;
+    background-color: red;
+    position: relative;
+    z-index: 2;
+  }
+  .second {
+    width: 20%;
+    height: 20%;
+    background-color: blue;
+    position: relative;
+    left: 40px;
+    top: -30px;
+    z-index: 1;
+    text-align: right;
+  }
 </style>
 <div class="fullCard">
   <div class="cardContent">
@@ -82,11 +99,13 @@
         <li>none :	Default: Use the original text</li>
       </ul>
     </div>
+    <br>
+    <div class="first">z-index: 2;</div>
+    <div class="second">z-index: 1;</div>
+    <br>
     <div class="cardLinks">
       <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
       <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
     </div>
   </div>
 </div>
-<hr>
-
